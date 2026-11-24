@@ -1,0 +1,44 @@
+<title>Panel administrador - FeriaPlace</title>
+<link rel="stylesheet" href="css/style.css">
+<header>
+  <a href="index.html">FeriaPlace</a>
+  <nav id="nav-sesion"></nav>
+</header>
+<main>
+  <div class="tarjeta">
+    <h2>Solicitudes pendientes</h2>
+    <p>Asigna un puesto disponible del mapa a cada solicitud, o recházala si no corresponde.</p>
+    <table>
+      <thead>
+        <tr>
+          <th>Comerciante</th>
+          <th>Rubro</th>
+          <th>Zona preferida</th>
+          <th>Tamaño preferido</th>
+          <th>Comentario</th>
+          <th>Acción</th>
+        </tr>
+      </thead>
+      <tbody id="tabla-pendientes"></tbody>
+    </table>
+    <div id="mensaje"></div>
+  </div>
+
+  <div class="tarjeta">
+    <h2>Historial de solicitudes</h2>
+    <table>
+      <thead>
+        <tr>
+          <th>Comerciante</th>
+          <th>Rubro</th>
+          <th>Estado</th>
+          <th>Puesto</th>
+          <th>Comentario admin</th>
+        </tr>
+      </thead>
+      <tbody id="tabla-historial"></tbody>
+    </table>
+  </div>
+</main>
+<script src="js/api.js"></script>
+<script src="js/admin.js"></script>

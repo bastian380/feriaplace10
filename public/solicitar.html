@@ -1,0 +1,40 @@
+<title>Solicitar puesto - FeriaPlace</title>
+<link rel="stylesheet" href="css/style.css">
+<header>
+  <a href="index.html">FeriaPlace</a>
+  <nav id="nav-sesion"></nav>
+</header>
+<main>
+  <div class="tarjeta">
+    <h2>Solicitar un puesto</h2>
+    <p>Cuéntanos qué necesitas. El administrador revisará tu solicitud y te asignará un puesto disponible según el mapa de la feria.</p>
+    <form id="form-solicitud">
+      <label for="rubro">Rubro / qué vendes *</label>
+      <input type="text" id="rubro" required placeholder="Ej: comida, artesanía, ropa...">
+
+      <label for="zona">Zona de preferencia (opcional)</label>
+      <select id="zona">
+        <option value="">Sin preferencia</option>
+        <option value="Zona A - Comida">Zona A - Comida</option>
+        <option value="Zona B - Artesanía">Zona B - Artesanía</option>
+        <option value="Zona C - Ropa y accesorios">Zona C - Ropa y accesorios</option>
+      </select>
+
+      <label for="tamano">Tamaño de puesto preferido (opcional)</label>
+      <select id="tamano">
+        <option value="">Sin preferencia</option>
+        <option value="pequeno">Pequeño</option>
+        <option value="mediano">Mediano</option>
+        <option value="grande">Grande</option>
+      </select>
+
+      <label for="comentario">Comentario adicional (opcional)</label>
+      <textarea id="comentario" rows="3"></textarea>
+
+      <button type="submit">Enviar solicitud</button>
+    </form>
+    <div id="mensaje"></div>
+  </div>
+</main>
+<script src="js/api.js"></script>
+<script src="js/solicitar.js"></script>
